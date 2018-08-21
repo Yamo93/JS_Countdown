@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Abel', sans-serif;
+  background-color: #2D3E50;
+  text-transform: uppercase; }
+
+.wrapper {
+  width: 70%;
+  margin: 70px auto; }
+  .wrapper .title {
+    text-align: center;
+    font-size: 32px;
+    color: #55758E;
+    margin-bottom: 80px; }
+    .wrapper .title span {
+      color: rgba(209, 28, 28, 0.925); }
+  .wrapper .timer {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around; }
+    .wrapper .timer .timer__days,
+    .wrapper .timer .timer__hours,
+    .wrapper .timer .timer__minutes,
+    .wrapper .timer .timer__seconds {
+      width: 300px;
+      height: 300px;
+      position: relative; }
+      .wrapper .timer .timer__days-text,
+      .wrapper .timer .timer__hours-text,
+      .wrapper .timer .timer__minutes-text,
+      .wrapper .timer .timer__seconds-text {
+        position: absolute;
+        bottom: 10px;
+        left: 45%;
+        transform: translateX(-50%);
+        font-size: 32px;
+        color: #55758E;
+        font-weight: 600; }
+      .wrapper .timer .timer__days-box,
+      .wrapper .timer .timer__hours-box,
+      .wrapper .timer .timer__minutes-box,
+      .wrapper .timer .timer__seconds-box {
+        width: 210px;
+        height: 220px;
+        background-color: #16A086;
+        color: #EBEFF0;
+        border-radius: 20%;
+        box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.2);
+        position: relative; }
+        .wrapper .timer .timer__days-box--num,
+        .wrapper .timer .timer__hours-box--num,
+        .wrapper .timer .timer__minutes-box--num,
+        .wrapper .timer .timer__seconds-box--num {
+          font-size: 122px;
+          font-weight: 600;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%); }
